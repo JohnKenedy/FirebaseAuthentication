@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FirebaseAuthentication</string>
+    <string name="app_name">WorldMarket</string>
 
     <string name="content_description">image</string>
     <string name="title_login">Login</string>
@@ -7,6 +7,27 @@
     <string name="et_hint_password">Password</string>
     <string name="lbl_forgot_password">Forget password?</string>
     <string name="don_t_have_an_account">Don\'t have an account? <font color='#005ABA'><b>Register.</b></font></string>
+
+    <string name="create_an_account">Create Account</string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="et_hint_confirm_password">Confirm password</string>
+
+    <string name="i_agree_to_the_terms_and_conditions">By registering you agree with the <font color='#005ABA'><b>Terms &amp; Condition.</b></font></string>
+    <string name="btn_lbl_register">Register</string>
+    <string name="already_have_an_account">Already have an account? <font color='#005ABA'><b>Login.</b></font></string>
+
+    <string name="error_msg_enter_first_name">Please enter first name.</string>
+    <string name="error_msg_enter_last_name">Please enter last name.</string>
+    <string name="error_msg_enter_email">Please enter email.</string>
+    <string name="error_msg_enter_password">Please enter password.</string>
+    <string name="error_msg_confirm_password">Please enter confirm password.</string>
+    <string name="error_msg_password_and_confirm_password_mismatch">Password and confirm password does not match.</string>
+    <string name="registery_successfull">Thanks for registering!</string>
+    <string name="welcome">Welcome!</string>
+    <string name="logout">Logout</string>
+    <string name="uid">UID:</string>
+    <string name="login_successfully">Logged!</string>
 
 
 </resources>

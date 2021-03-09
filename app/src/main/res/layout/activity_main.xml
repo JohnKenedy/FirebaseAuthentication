@@ -3,16 +3,96 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/screen_background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome"
+        android:textColor="@color/blue_end"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_main_activity_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/et_hint_email_id"
+        android:textColor="@color/blue_end"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
+
+    <TextView
+        android:id="@+id/tv_main_activity_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center_horizontal"
+        android:textColor="@color/blue_end"
+        android:textSize="18sp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_main_activity_email"
+        app:layout_constraintTop_toTopOf="@id/tv_main_activity_email"
+        tools:text="Hello World!" />
+
+    <TextView
+        android:id="@+id/tv_main_activity_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/uid"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/blue_end"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_activity_email"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_activity_email" />
+
+    <TextView
+        android:id="@+id/tv_main_activity_user_uid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="start"
+        android:textColor="@color/blue_end"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_main_activity_uid"
+        app:layout_constraintTop_toTopOf="@+id/tv_main_activity_uid"
+        tools:text="123456" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_main_activity_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="@string/logout"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_main_activity_user_uid" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
